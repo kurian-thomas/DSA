@@ -1,0 +1,42 @@
+1. Graps = nodes/vertex + edges(connection between nodes)
+
+2. types of graphs:
+    1. Directed 
+        Directed Acyclic -> DAG
+    2. Un-directed
+
+3. Representation:
+    a. Adj list -> v1 : [(v2:w2),(v3:w3)] -> paris will be a hashMap
+    b adj matrix ( not prefered due to space and time complexity )
+
+4. Traversals:
+    a. DFS:
+        i. favours 1 direction
+        ii. Stack
+
+    b. BFS:
+        i. favours all directions evenly
+        ii. Queue
+
+5. convert all representation to ADJ list with visited set or map
+
+6. Connected componenets
+    i. traversal + some counting logic
+    ii. largest componenet
+            a. traversal + count nodes
+
+7. Shortest path
+    i. BFS + distance counting
+
+8. dijkstra
+    i. greedy path finding ( non negative , distancing replacing)
+    ii. Bfs + distace updating
+    iii. both directed and undirected
+    iv. no negative edges
+    v. using sets
+
+9. bellmanford
+    i. change undirected to directed graphs
+    ii. can use to detect negative cycles
+    iv. relax edges n-1 times to get distance array
+    v. nth cycle shows a reduction then (negative cycle exists)
